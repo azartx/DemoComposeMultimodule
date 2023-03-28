@@ -5,7 +5,7 @@ import com.solo4.home.ui.HomeViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
-val homeModule = module {
+val homeFeatureModule = module {
     includes(dataModule)
     viewModel { HomeViewModel(get()) }
 }

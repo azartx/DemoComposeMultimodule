@@ -1,7 +1,7 @@
 package com.solo4.demo
 
 import android.app.Application
-import com.solo4.home.di.homeModule
+import com.solo4.demo.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -13,10 +13,7 @@ class App : Application() {
         startKoin {
             androidContext(this@App)
             androidLogger(Level.ERROR)
-            modules(listOf(
-                homeModule,
-                //networkModule
-            ))
+            modules(appModule)
         }
     }
 }

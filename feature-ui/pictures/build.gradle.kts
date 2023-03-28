@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.solo4.home"
+    namespace = "com.solo4.pictures"
     compileSdk = 33
 
     defaultConfig {
-        minSdk = 27
+        minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -46,6 +46,8 @@ dependencies {
     implementation(libs.koin.compose.navigation)
 
     implementation(libs.navigation.compose)
+
+    implementation("io.coil-kt:coil-compose:2.3.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
