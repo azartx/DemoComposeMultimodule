@@ -42,6 +42,7 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit.converterGson)
     implementation(libs.gson)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
 
     implementation(libs.koin.compose)
 }

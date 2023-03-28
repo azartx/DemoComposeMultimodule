@@ -38,4 +38,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     implementation(project("::core-network"))
+    implementation(project("::core-model"))
+    implementation(project("::common"))
+    implementation(libs.koin.compose)
 }
