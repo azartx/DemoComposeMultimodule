@@ -21,7 +21,6 @@ class JokesRepositoryImpl(private val jokesApi: DadJokesApi) : JokesRepository {
     override suspend fun getRandomJokePng(): Result<JokePng> {
         return runCatching {
             jokesApi.getRandomJokePng().body
-                .lastOrNull()
                 ?.transform {
                     JokePng(
                         it.id,

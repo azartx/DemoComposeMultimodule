@@ -22,8 +22,8 @@ import org.koin.androidx.compose.koinViewModel
 @Composable
 fun PictureJokesScreen(navController: NavHostController, viewModel: PictureJokesViewModel = koinViewModel()) {
     Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
-        // todo Image(bitmap = , contentDescription = "")
-        Button(onClick = { /*TODO*/ }) {
+        Image(bitmap = viewModel.pictureJokesScreenState.value.currentJokeBitmap, contentDescription = "")
+        Button(onClick = { viewModel.requestJoke() }) {
             Text(text = "Next image")
         }
     }

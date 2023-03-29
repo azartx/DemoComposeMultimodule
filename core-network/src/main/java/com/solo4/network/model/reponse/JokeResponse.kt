@@ -6,3 +6,8 @@ data class JokeResponse<T>(
     @SerializedName("success") val isSuccess: Boolean,
     val body: List<T?>
 )
+
+data class JokeResponsePng<T>(
+    @SerializedName("success") val isSuccess: Boolean,
+    val body: T?
+)

@@ -7,6 +7,7 @@ compose_bom = "2023.01.00"
 compose-material3 = "1.1.0-beta01"
 retrofit = "2.9.0"
 gson = "2.10.1"
+coroutines = "1.7.0-Beta"
 
 [libraries]
 core_ktx = { module = "androidx.core:core-ktx", version.ref = "core_ktx" }
@@ -34,3 +35,5 @@ compose-ui = { group = "androidx.compose.ui", name = "ui" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit-converterGson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }

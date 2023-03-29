@@ -22,20 +22,20 @@ fun MainScreen(navController: NavHostController) {
         bottomBar = {
             BottomBar {
                 BottomBarItem(
-                    label = { Text(text = "Tab1") },
+                    label = { Text(text = "Text Jokes") },
                     selected = true,
                     alwaysShowLabel = true,
                     icon = { Image(painter = painterResource(id = R.drawable.ic_anchor), contentDescription = "Tab1") }
                 ) {
-                    // todo on click
+                    navController.navigate("home")
                 }
                 BottomBarItem(
-                    label = { Text(text = "Tab2") },
+                    label = { Text(text = "Pictured Jokes") },
                     selected = true,
                     alwaysShowLabel = true,
                     icon = { Image(painter = painterResource(id = R.drawable.ic_circles), contentDescription = "Tab2") }
                 ) {
-                    // todo on click
+                    navController.navigate("picture")
                 }
             }
         }

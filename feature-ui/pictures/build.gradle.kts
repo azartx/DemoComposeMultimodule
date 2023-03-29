@@ -47,6 +47,8 @@ dependencies {
 
     implementation(libs.navigation.compose)
 
+    //implementation(libs.coroutines.android)
+
     implementation("io.coil-kt:coil-compose:2.3.0")
 
     testImplementation("junit:junit:4.13.2")
