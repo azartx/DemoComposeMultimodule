@@ -13,20 +13,20 @@ import com.solo4.settings.ui.SettingsScreen
 fun AppNavHost(
     navController: NavHostController,
     modifier: Modifier = Modifier,
-    startDestination: String = "home"
+    startDestination: String = NavGraph.HomeScreen.route
 ) {
     NavHost(
         navController = navController,
         startDestination = startDestination,
         modifier = modifier,
     ) {
-        composable("home") {
+        composable(NavGraph.HomeScreen.route) {
             HomeScreen(navController)
         }
-        composable("picture") {
+        composable(NavGraph.PicturesScreen.route) {
             PictureJokesScreen(navController)
         }
-        composable("settings") {
+        composable(NavGraph.SettingsScreen.route) {
             SettingsScreen(navController)
         }
     }
