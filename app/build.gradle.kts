@@ -18,6 +18,8 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        //resourceConfigurations.addAll(arrayOf("en", "ru"))
     }
 
     buildTypes {
@@ -53,6 +55,7 @@ dependencies {
     implementation(project("::core-ui"))
     implementation(project("::feature-ui:home"))
     implementation(project("::feature-ui:pictures"))
+    implementation(project("::feature-i18n"))
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
