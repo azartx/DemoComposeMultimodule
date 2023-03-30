@@ -55,6 +55,7 @@ dependencies {
     implementation(project("::core-ui"))
     implementation(project("::feature-ui:home"))
     implementation(project("::feature-ui:pictures"))
+    implementation(project("::feature-ui:settings"))
     implementation(project("::feature-i18n"))
 
     implementation(libs.core.ktx)

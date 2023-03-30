@@ -57,8 +57,7 @@ fun MainScreen(navController: NavHostController) {
                     alwaysShowLabel = true,
                     icon = { Image(painter = painterResource(id = R.drawable.ic_settings), contentDescription = "Tab2") }
                 ) {
-                    //navController.navigate("picture")
-                    //qwe.setNewLocale("ru", context as Activity)
+                    navController.navigate("settings")
                 }
             }
         }

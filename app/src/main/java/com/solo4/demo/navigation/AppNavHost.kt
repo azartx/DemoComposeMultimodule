@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.solo4.home.ui.HomeScreen
 import com.solo4.pictures.ui.PictureJokesScreen
+import com.solo4.settings.ui.SettingsScreen
 
 @Composable
 fun AppNavHost(
@@ -24,6 +25,9 @@ fun AppNavHost(
         }
         composable("picture") {
             PictureJokesScreen(navController)
+        }
+        composable("settings") {
+            SettingsScreen(navController)
         }
     }
 }
