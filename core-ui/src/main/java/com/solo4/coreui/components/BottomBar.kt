@@ -7,7 +7,6 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 
 @Composable
 fun BottomBar(
@@ -16,9 +15,9 @@ fun BottomBar(
 ) {
     NavigationBar(
         modifier = modifier,
-        contentColor = MaterialTheme.colorScheme.onSurfaceVariant,
-        tonalElevation = 0.dp,
-        content = content
+        contentColor = MaterialTheme.colorScheme.surface,
+        content = content,
+        containerColor = MaterialTheme.colorScheme.surface
     )
 }
 
@@ -46,7 +45,7 @@ fun RowScope.BottomBarItem(
             unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
             selectedTextColor = MaterialTheme.colorScheme.onPrimaryContainer,
             unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant,
-            indicatorColor = MaterialTheme.colorScheme.primaryContainer,
+            indicatorColor = MaterialTheme.colorScheme.primary,
         )
     )
 }
