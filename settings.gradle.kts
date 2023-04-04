@@ -11,8 +11,14 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+    versionCatalogs {
+        create("libs") {
+            from(files("../../IdeaProjects/GradlePreparePlugins/gradle/libs.versions.toml"))
+        }
+    }
 }
 rootProject.name = "Demo"
+includeBuild("../../IdeaProjects/GradlePreparePlugins")
 include(":app")
 include(":core-network")
 include(":core-ui")

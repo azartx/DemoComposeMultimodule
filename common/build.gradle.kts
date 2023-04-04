@@ -1,11 +1,9 @@
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    id("gradle-prepare-android")
 }
 
 android {
     namespace = "com.solo4.common"
-    compileSdk = 33
 }
 
 dependencies {

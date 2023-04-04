@@ -12,7 +12,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.solo4.coreui.components.BottomBar
 import com.solo4.coreui.components.BottomBarItem
-import com.solo4.coreui.theme.DemoTheme
+import com.solo4.coreui.theme.ApplicationTheme
 import com.solo4.demo.R
 import com.solo4.demo.navigation.AppNavHost
 import com.solo4.demo.navigation.NavGraph
@@ -76,7 +76,7 @@ fun MainScreen(navController: NavHostController) {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    DemoTheme {
+    ApplicationTheme {
         MainScreen(rememberNavController())
     }
 }

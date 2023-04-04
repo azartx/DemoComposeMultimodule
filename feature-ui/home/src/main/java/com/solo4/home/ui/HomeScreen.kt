@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.solo4.coreui.common.Stateless
-import com.solo4.coreui.theme.DemoTheme
+import com.solo4.coreui.theme.ApplicationTheme
 import com.solo4.feature_i18n.Str
 import com.solo4.feature_i18n.str
 import org.koin.androidx.compose.koinViewModel
@@ -61,7 +61,7 @@ fun HomeScreen(navController: NavHostController, viewModel: HomeViewModel = koin
 @Preview(showBackground = true)
 @Composable
 fun HomeScreenPreview() {
-    DemoTheme {
+    ApplicationTheme {
         HomeScreen(rememberNavController())
     }
 }
