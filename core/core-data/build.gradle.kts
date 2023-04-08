@@ -9,8 +9,8 @@ android {
 dependencies {
     testImplementation("junit:junit:4.13.2")
 
-    implementation(project("::core-network"))
-    implementation(project("::core-model"))
+    implementation(project("::core:core-network"))
+    implementation(project("::core:core-model"))
     implementation(project("::common"))
     implementation(libs.koin.compose)
 }

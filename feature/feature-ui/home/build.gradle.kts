@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.solo4.settings"
+    namespace = "com.solo4.home"
 
     buildFeatures {
         compose = true
@@ -16,8 +16,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     implementation(libs.core.ktx)
-    implementation(project("::core-ui"))
-    implementation(project("::feature-i18n"))
+    implementation(project("::core:core-ui"))
+    implementation(project("::core:core-data"))
+    implementation(project("::core:core-model"))
 
     implementation(libs.koin.compose)
     implementation(libs.koin.compose.navigation)

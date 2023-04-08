@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.solo4.pictures"
+    namespace = "com.solo4.settings"
 
     buildFeatures {
         compose = true
@@ -16,14 +16,11 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     implementation(libs.core.ktx)
-    implementation(project("::core-ui"))
-    implementation(project("::core-data"))
-    implementation(project("::core-model"))
+    implementation(project("::core:core-ui"))
+    implementation(project("::feature:feature-i18n"))
 
     implementation(libs.koin.compose)
     implementation(libs.koin.compose.navigation)
 
     implementation(libs.navigation.compose)
-
-    implementation("io.coil-kt:coil-compose:2.3.0")
 }

@@ -1,6 +1,5 @@
 package com.solo4.feature_i18n
 
-import androidx.compose.runtime.Composable
 import com.solo4.feature_i18n.data.repository.LocalizationRepository
 import kotlin.reflect.KProperty
 import org.koin.core.component.KoinComponent

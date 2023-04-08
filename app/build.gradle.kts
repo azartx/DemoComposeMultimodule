@@ -33,13 +33,13 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
 
-    implementation(project("::core-ui"))
+    implementation(project("::core:core-ui"))
 
-    implementation(project("::feature-ui:home"))
-    implementation(project("::feature-ui:pictures"))
-    implementation(project("::feature-ui:settings"))
+    implementation(project("::feature:feature-ui:home"))
+    implementation(project("::feature:feature-ui:pictures"))
+    implementation(project("::feature:feature-ui:settings"))
 
-    implementation(project("::feature-i18n"))
+    implementation(project("::feature:feature-i18n"))
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)

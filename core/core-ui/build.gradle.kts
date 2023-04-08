@@ -18,7 +18,7 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    api(project("::feature-i18n"))
+    api(project("::feature:feature-i18n"))
 
     api(libs.compose.foundation)
     api(libs.compose.foundation.layout)

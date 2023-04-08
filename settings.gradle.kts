@@ -13,19 +13,19 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("libs") {
-            from(files("../../IdeaProjects/GradlePreparePlugins/gradle/libs.versions.toml"))
+            from(files("../GradlePreparePlugins/gradle/libs.versions.toml"))
         }
     }
 }
 rootProject.name = "Demo"
-includeBuild("../../IdeaProjects/GradlePreparePlugins")
+includeBuild("../GradlePreparePlugins") // git clone https://github.com/azartx/GradlePreparePlugins.git
 include(":app")
-include(":core-network")
-include(":core-ui")
-include(":feature-ui:home")
-include(":core-data")
-include(":core-model")
 include(":common")
-include(":feature-ui:pictures")
-include(":feature-i18n")
-include(":feature-ui:settings")
+include(":core:core-network")
+include(":core:core-ui")
+include(":core:core-data")
+include(":core:core-model")
+include(":feature:feature-ui:home")
+include(":feature:feature-ui:pictures")
+include(":feature:feature-i18n")
+include(":feature:feature-ui:settings")

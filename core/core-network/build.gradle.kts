@@ -9,7 +9,7 @@ android {
 dependencies {
     testImplementation("junit:junit:4.13.2")
 
-    implementation(project("::core-model"))
+    implementation(project("::core:core-model"))
 
     implementation(libs.retrofit)
     implementation(libs.retrofit.converterGson)
